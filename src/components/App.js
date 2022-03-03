@@ -20,7 +20,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="actors">
+        <Route exact path="/actors">
           <Actors />
         </Route>
       </Switch>

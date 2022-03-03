@@ -2,26 +2,26 @@ import React from "react";
 import { actors } from "../data";
 
 function Actors() {
-  return (
+  console.log(actors)
+  const actorsDiv = actors.map((actor) => {
+    return (
+    <div>
+      {actor.name}
+      <ul>
+        {actor.movies}
+      </ul>
+    </div>
+    )
+  })
+  
+return (
   <div>
     <h1>Actors Page</h1>
       <div>
-        {actors}
-        <ul></ul>
-      </div>
-      <div>
-        {actors}
-        <ul></ul>
-      </div>
-      <div>
-        {actors}
-        <ul></ul>
-      </div>
-      <div>
-        {actors}
-        <ul></ul>
+        {actorsDiv}
       </div>
   </div>
+      
   )}
 
 export default Actors;
